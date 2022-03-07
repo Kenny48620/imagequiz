@@ -1,9 +1,9 @@
 
 import React from 'react'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from "./components/Home.js";
-import Register from "./components/Register.js";
-import Login from "./components/Login.js";
+import Home from "./components/Home";
+import Register from "./components/Register";
+import Login from "./components/Login";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

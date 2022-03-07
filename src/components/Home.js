@@ -1,5 +1,5 @@
 
-import flowers from './data.js'
+import flowers from '../data_access_layer/data.js'
 import Container from 'react-bootstrap/Container';
 
 import Row from 'react-bootstrap/Row';
