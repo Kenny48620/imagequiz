@@ -1,14 +1,14 @@
 
 import React from 'react'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from "./components/Home";
-import Register from "./components/Register";
-import Login from "./components/Login";
+import Home from "./components/Home.js";
+import Register from "./components/Register.js";
+import Login from "./components/Login.js";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Menu from './components/Menu';
+import Menu from './components/Menu.js';
 
 import { useState } from 'react';
 
