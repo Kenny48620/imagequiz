@@ -29,7 +29,7 @@ const Quiz = () => {
             setQuiz(x);
         }  
         if (isSubmit === true){
-        	document.getElementById('scoreArea').innerHTML="Your scored "+score+" out of 6!";  
+        	document.getElementById('scoreArea').innerHTML="You scored "+score+" out of 6!";  
     	}
     });
 
@@ -64,10 +64,15 @@ const Quiz = () => {
             	{quiz ?
             		quiz.questions.map((question, index)=>
 	                <Col >
-                        <Card className="h-60" >
-                            <Card.Img className='img-fluid' variant="top" src={question.picture} />
+                        <Card >
+                            <Card.Img className='img-fluid' 
+                            		  variant="top" 
+                            		  src={question.picture} 
+                            		  style={{ height: '18rem' }}
+
+                            		  />
                             <Card.Body>
-                                <Card.Title>Quiz {index+1}</Card.Title>
+                                <Card.Title>Question {index+1}</Card.Title>
                                 <Card.Text></Card.Text>
                             </Card.Body>
                             <ListGroup>
