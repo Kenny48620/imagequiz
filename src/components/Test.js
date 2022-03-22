@@ -16,9 +16,11 @@ function Test() {
 
 
 
-  // useEffect(()=>{
-  // 	document.title = `You clicked ${count} times`;
-  // })
+  useEffect(()=>{
+   	document.title = `You clicked ${count} times`;
+
+   	document.getElementById('scoreText').innerText= 'Your current score: '+ count;
+  })
 
   const countIncHandler = (e)=>{
 
@@ -49,7 +51,8 @@ function Test() {
       </button>
 
 
-      	<p>Your current score: {score} </p>
+      	<p id="scoreText"></p>
+      	<p >Your current score:  {count}; </p>
     </div>
   );
 }
