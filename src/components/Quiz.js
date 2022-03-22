@@ -64,7 +64,7 @@ const Quiz = () => {
             	{quiz ?
             		quiz.questions.map((question, index)=>
 	                <Col >
-                        <Card className="h-100" >
+                        <Card className="h-60" >
                             <Card.Img className='img-fluid' variant="top" src={question.picture} />
                             <Card.Body>
                                 <Card.Title>Quiz {index+1}</Card.Title>
