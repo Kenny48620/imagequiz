@@ -80,7 +80,7 @@ const Quiz = () => {
                                     <ListGroup.Item>
                                     <input type="radio"
                                     	   name={index} 
-                                    	   value={each == question.answer}
+                                    	   value={each === question.answer}
                                     	   onChange={choose}
                                     />
 
