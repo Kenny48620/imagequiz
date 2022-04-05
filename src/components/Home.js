@@ -18,18 +18,20 @@ const Home = () =>{
 
 	var content = [];
 	flowers.map(flower=>{
-		content.push(<Col className='col-sm-3 p-3' style={{'text-align':'center' }}> 
+		content.push(<div className='col-sm-3 p-3' style={{'text-align':'center' }}> 
 						<img  className='img-fluid' alt={flower.name} src={flower.picture} onClick={()=>takeQuiz(flower.name)}/>
 						<div> {flower.name}</div>
-						</Col>
+						</div>
 					  )
 	})
 
 	return (
 		<Container>
-			<Row>
-			{content}
-			</Row>
+			<div className="container">
+				<div className="row">
+					{content}
+				</div>
+			</div>
 		</Container>
 	);
 }

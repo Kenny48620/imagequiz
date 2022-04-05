@@ -7,6 +7,7 @@ let dataService = {
       getFlowers:()=>{
             return flowers;
       },
+      
       getQuiz:(name)=>{
             let quiz = data.find(x => x.name.toLowerCase() === name.toLowerCase());
             return quiz;

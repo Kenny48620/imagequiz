@@ -21,16 +21,16 @@ const Login = (props) =>{
 
     let onSubmitHandler = (e) => {
         e.preventDefault();
-         let found = local_temp_store.customers.find(x => 
+        let found = local_temp_store.customers.find(x => 
             (x.email.toLowerCase() === email.toLowerCase()) && (x.password === password));
-
-         if(found) {
-             props.customerLoggedIn(email);
+        
+        if(found) {
+            props.customerLoggedIn(email);
             console.log('get1');
-             navigate('/');
-         } else {             
+            navigate('/');
+        } else {             
              alert('The credentials are not valid!');
-         }
+        }
     }
 
 

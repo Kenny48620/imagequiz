@@ -9,7 +9,7 @@ import dataService from "../data_access_layer/local_temporarily_storage";
 import { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
-
+//window.location.reload()
 const Quiz = () => {
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
     const [quiz, setQuiz] = useState(undefined);

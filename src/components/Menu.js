@@ -14,12 +14,20 @@ const Menu = (props) =>{
 		    <Navbar.Toggle aria-controls="basic-navbar-nav" />
 		    <Navbar.Collapse id="basic-navbar-nav">
 		      <Nav className="me-auto">
-		        <Nav.Link href=".#/register">Register</Nav.Link>
-		        <Nav.Link href=".#/login">Login</Nav.Link>
-		        <Nav.Link href="./">Home</Nav.Link>
+              {
+              props.customer ? 
+              <Navbar.Text>
+                Signed in as {props.customer}
+              </Navbar.Text>                
+              :
+              <>
+              <Nav.Link href="#/register">Register</Nav.Link>
+              <Nav.Link href="#/login">Login</Nav.Link>
+              <Nav.Link href="./">Home</Nav.Link>
+              </>         
+            }   
 		        
-
-
+		        
 		      </Nav>
 		    </Navbar.Collapse>
 		  </Container>

@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React from 'react';
 import {HashRouter, Routes, Route} from "react-router-dom";
 import Home from "./components/Home.js";
 import Register from "./components/Register.js";
@@ -25,14 +25,14 @@ function App() {
 
 
   return (
-
+    
 
     <HashRouter>
 
       <Container fluid>
         <Row>
           <Col>
-            <Menu />
+            <Menu customer={customer} />
           </Col>
         </Row>
 
